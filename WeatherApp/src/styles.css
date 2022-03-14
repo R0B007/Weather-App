@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  text-shadow: black;
+  background-image: url(clouds.jpg);
+  background-size: cover;
+}
+
+form {
+  padding: 20px;
+  display: inline;
+}
+
+button {
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
+  color: black;
+}
+
+.btn-primary:hover {
+  transition: ease-in-out;
+  background: lightblue;
+  color: black;
+}
+
+.scd-primary {
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
+  color: black;
+}
+
+.scd-primary:hover {
+  transition: ease-in-out;
+  background: lightblue;
+  color: black;
+}
+
+#city_state {
+  padding: 30px;
+  margin-bottom: 20px;
+  display: block;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  opacity: 0.7;
+}
+
+#today {
+  height: 150px;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  opacity: 0.7;
+}
+
+#current-high-low {
+  height: 150px;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  opacity: 0.7;
+}
+
+#multi-day-forcast {
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.C {
+  color: blue;
+}
+
+.F {
+  color: blue;
+}
