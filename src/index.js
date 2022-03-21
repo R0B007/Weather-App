@@ -37,6 +37,7 @@ function replaceCity(event) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
+  icon.innerHTML = response.data.weather[0].icon;
   city.innerHTML = citySearch.response.data.name;
   getWeather(response.data.name);
 }
