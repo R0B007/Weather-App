@@ -31,7 +31,7 @@ function replaceCity(event) {
   event.preventDefault();
   let city = document.querySelector("h1");
   let citySearch = document.querySelector("#searchBar");
-  let icon = document.querySelector("#icon");
+  let icon = document.querySelector(".icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
