@@ -11,14 +11,14 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App by Rob</title>
   </head>
   <body>
     <div class="container">
       <form id="searchCity">
         <div class="city">
-          <input type="text" placeholder="Enter City" id="searchBar"/>
+          <input type="text" placeholder="Enter City" id="searchBar" />
           <button type="submit" class="btn-primary">Submit</button>
           <button type="Use Current Location" class="scd-primary">
             Use Current Location
@@ -30,28 +30,19 @@
           <div class="card" id="city_state">
             <div class="card-body">
               <h1>Stevenson, Washington</h1>
-              <div class="dateAndTime">
-              </div>
+              <div class="dateAndTime"></div>
             </div>
           </div>
-				</div>
-			
+        </div>
+
         <div class="col-sm-5">
           <div class="card" id="today">
             <div class="card-body">
               <h2>Currently</h2>
-              <span class="current-temp">
-                
-              </span>
-              <span class="C">
-              
-              </span>
-              <span class="breakLine">
-                
-              </span>
-              <span class="F">
-              
-              </span>
+              <span class="current-temp"> </span>
+              <span class="C"> </span>
+              <span class="breakLine"> </span>
+              <span class="F"> </span>
             </div>
           </div>
         </div>
@@ -59,18 +50,14 @@
           <div class="card" id="current-high-low">
             <div class="card-body">
               <h3>High</h3>
-              <div class="high-temp">
-                46℉
-              </div>
+              <div class="high-temp">46℉</div>
               <h4>Low</h4>
-              <div class="low-temp">
-                38℉
-              </div>
+              <div class="low-temp">38℉</div>
             </div>
           </div>
         </div>
-			</div>
-	
+      </div>
+
       <div class="row" id="multi-day-forcast">
         <div class="col-2">
           <div class="card" id="day1">
@@ -114,23 +101,24 @@
               <div class="low-temp">Low Temprature</div>
               <p class="disp-low-temp">40℉</p>
             </div>
-					</div>
-				</div>
-          <div class="col-2">
-            <div class="card" id="day5">
-              <div class="card-header">Sunday</div>
-              <div class="card-body">
-                <div class="disp-high-temp">High Temprature</div>
-                <p class="temp">49℉</p>
-                <div class="low-temp">Low Temprature</div>
-                <p class="disp-low-temp">40℉</p>
-              </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" id="day5">
+            <div class="card-header">Sunday</div>
+            <div class="card-body">
+              <div class="disp-high-temp">High Temprature</div>
+              <p class="temp">49℉</p>
+              <div class="low-temp">Low Temprature</div>
+              <p class="disp-low-temp">40℉</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>https://github.com/R0B007/Weather-App</footer>
+    <footer>
+      <a href="https://github.com/R0B007/Weather-App" target="_blank"></a>
+    </footer>
   </body>
   <script src="src/index.js"></script>
 </html>
