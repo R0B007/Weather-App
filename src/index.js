@@ -31,14 +31,20 @@ function replaceCity(event) {
   event.preventDefault();
   let city = document.querySelector("h1");
   let citySearch = document.querySelector("#searchBar");
-  city.innerHTML = citySearch.value;
-  getWeather(citySearch.value);
+  let icon = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
+  city.innerHTML = citySearch.response.data.name;
+  getWeather(response.data.name);
 }
 
 function getTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".current-temp");
-  temperatureElement.innerHTML = `${temperature}°C`;
+  temperatureElement.innerHTML = `${temperature}`;
 }
 let searchCity = document.querySelector("#searchCity");
 searchCity.addEventListener("submit", replaceCity);
