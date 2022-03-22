@@ -39,7 +39,7 @@ function replaceCity(event) {
   icon.setAttribute("alt", response.data.weather[0].description);
   icon.innerHTML = response.data.weather[0].icon;
   city.innerHTML = citySearch.response.data.name;
-  getWeather(response.data.name);
+  getWeather(response.data.coord);
 }
 
 function getTemp(response) {
