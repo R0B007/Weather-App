@@ -32,6 +32,8 @@ function replaceCity(event) {
   let city = document.querySelector("h1");
   let citySearch = document.querySelector("#searchBar");
   let icon = document.querySelector(".icon");
+  let windSpeed = document.querySelector(".windspeed");
+  let humidity = document.querySelector(".windspeed");
   icon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -39,6 +41,8 @@ function replaceCity(event) {
   icon.setAttribute("alt", response.data.weather[0].description);
   icon.innerHTML = response.data.weather[0].icon;
   city.innerHTML = citySearch.response.data.name;
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
+  humidity.innerHTML = response.data.main.humidity;
   getWeather(response.data.coord);
 }
 
