@@ -31,6 +31,16 @@ function replaceCity(event) {
   event.preventDefault();
   let city = document.querySelector("h1");
   let citySearch = document.querySelector("#searchBar");
+  city.innerHTML = citySearch.value;
+
+  getWeather(citySearch.value);
+}
+
+function getTemp(response) {
+  let temperature = Math.round(response.data.main.temp);
+  let temperatureElement = document.querySelector(".current-temp");
+  temperatureElement.innerHTML = `${temperature}`;
+  let city = document.querySelector("h1");
   let icon = document.querySelector(".icon");
   let windSpeed = document.querySelector(".windspeed");
   let humidity = document.querySelector(".windspeed");
@@ -39,17 +49,9 @@ function replaceCity(event) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
-  icon.innerHTML = response.data.weather[0].icon;
-  city.innerHTML = citySearch.response.data.name;
+  city.innerHTML = response.data.name;
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
   humidity.innerHTML = response.data.main.humidity;
-  getWeather(response.data.coord);
-}
-
-function getTemp(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector(".current-temp");
-  temperatureElement.innerHTML = `${temperature}`;
 }
 let searchCity = document.querySelector("#searchCity");
 searchCity.addEventListener("submit", replaceCity);
@@ -60,18 +62,13 @@ function getWeather(cityName) {
   axios.get(apiUrl).then(getTemp);
 }
 
-function myCity() {
-  let localCity = document.querySelector("h1");
-  localCity.innerHTML = response.data.name;
-}
-function geoWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector(".current-temp");
-  temperatureElement.innerHTML = `${temperature}°C`;
+function geoWeather(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(geoPosition);
 }
 
 let currentCity = document.querySelector(".scd-primary");
-currentCity.addEventListener("click", myCity, geoWeather);
+currentCity.addEventListener("click", geoWeather);
 
 function geoPosition(postion) {
   let latitude = postion.coords.latitude;
@@ -80,7 +77,6 @@ function geoPosition(postion) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
   console.log(apiUrl);
-  axios.get(apiUrl).then(geoWeather);
+  axios.get(apiUrl).then(getTemp);
 }
-
 navigator.geolocation.getCurrentPosition(geoPosition);
