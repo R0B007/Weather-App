@@ -32,7 +32,7 @@ function replaceCity(event) {
   let city = document.querySelector("h1");
   let citySearch = document.querySelector("#searchBar");
   let icon = document.querySelector(".icon");
-  iconElement.setAttribute(
+  icon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
@@ -58,7 +58,7 @@ function getWeather(cityName) {
 
 function myCity() {
   let localCity = document.querySelector("h1");
-  localCity.innerHTML = `The temprature today is...`;
+  localCity.innerHTML = response.data.name;
 }
 function geoWeather(response) {
   let temperature = Math.round(response.data.main.temp);
