@@ -68,6 +68,10 @@ li {
   text-align: right;
 }
 
+.current-temp {
+  font-size: larger;
+  font-weight: bolder;
+}
 #city_state {
   padding: 30px;
   margin-bottom: 20px;
