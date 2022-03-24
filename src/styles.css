@@ -59,9 +59,8 @@ h1::first-letter {
 
 li {
   list-style: none;
-  text-align: right;
-  vertical-align: top;
-  display: inline-block;
+  display: block;
+  float: right;
 }
 
 .current-temp {
