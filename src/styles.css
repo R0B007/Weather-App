@@ -83,6 +83,7 @@ ul {
 }
 
 #current-high-low {
+  align-items: baseline;
   height: 150px;
   background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   opacity: 0.7;
