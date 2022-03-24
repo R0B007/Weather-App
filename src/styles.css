@@ -60,7 +60,7 @@ h1::first-letter {
 ul {
   list-style: none;
   display: block;
-  float: right;
+  float: left;
   height: auto;
 }
 
