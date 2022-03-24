@@ -59,6 +59,7 @@ h1::first-letter {
 
 .current-temp,
 ul {
+  list-style: none;
   font-size: 20px;
   font-weight: bolder;
   width: 50%;
