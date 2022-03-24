@@ -57,9 +57,13 @@ h1::first-letter {
   text-transform: capitalize;
 }
 
-.current-temp,
 ul {
   list-style: none;
+  float: right;
+  height: auto;
+}
+
+.current-temp {
   font-size: 20px;
   font-weight: bolder;
   width: 50%;
