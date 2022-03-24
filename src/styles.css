@@ -57,7 +57,7 @@ h1::first-letter {
   text-transform: capitalize;
 }
 
-li {
+ul {
   list-style: none;
   display: block;
   float: right;
