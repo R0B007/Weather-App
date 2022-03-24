@@ -67,8 +67,6 @@ ul {
 .current-temp {
   font-size: 20px;
   font-weight: bolder;
-  float: left;
-  text-align: center;
 }
 #city_state {
   padding: 30px;
