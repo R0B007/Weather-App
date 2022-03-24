@@ -60,6 +60,8 @@ h1::first-letter {
 
 li {
   list-style: none;
+  text-align: right;
+  padding-bottom: 20px;
 }
 
 .current-temp {
