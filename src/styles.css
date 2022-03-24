@@ -61,7 +61,6 @@ ul {
   list-style: none;
   float: right;
   height: auto;
-  display: inline;
 }
 
 .current-temp {
