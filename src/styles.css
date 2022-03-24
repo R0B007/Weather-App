@@ -61,6 +61,7 @@ ul {
   list-style: none;
   float: right;
   height: auto;
+  align-content: flex-end;
 }
 
 .current-temp {
