@@ -57,9 +57,13 @@ h1::first-letter {
   text-transform: capitalize;
 }
 
+ul {
+  list-style: none;
+  padding-right: 10px;
+}
+
 .ul-li,
 .weather-tempratures {
-  list-style: none;
   float: right;
   height: 100px;
   width: 100px;
