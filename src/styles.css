@@ -60,6 +60,7 @@ h1::first-letter {
 ul {
   list-style: none;
   padding-left: 10px;
+  float: right;
 }
 
 .ul-li,
