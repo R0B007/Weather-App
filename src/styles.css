@@ -57,10 +57,13 @@ h1::first-letter {
   text-transform: capitalize;
 }
 
-ul {
+.ul-li,
+.weather-tempratures {
   list-style: none;
   float: right;
-  height: auto;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
   position: relative;
   top: 0px;
 }
@@ -85,7 +88,6 @@ ul {
 
 #current-high-low {
   vertical-align: top;
-  align-items: baseline;
   height: 150px;
   background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   opacity: 0.7;
